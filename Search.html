@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <title>BBl Drizzy Games</title>
+    <style>
+        img {
+            width: 100px;
+            border-radius: 50px;
+            float: left;
+            margin-right: 10px;
+        }
+        button{
+            border-radius:calc(0.7 * var(--m));
+            margin-right: 10px;
+            display: flex;
+            border:calc(0.08 * var(--m)) solid transparent;
+            position: absolute;
+            color: #f3f3f3;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: var(--m);
+            padding: calc(0.5 * var(--m)) calc(1 * var(--m));
+            justify-content: center;
+            cursor: pointer;
+            background: linear-gradient(#121213, #121213),
+            linear-gradient(#121213 50%, rgba(18, 18, 19, 0.6) 80%, rgba(18, 18, 19, 0)),
+            linear-gradient(
+            90deg,
+            var(--orange),
+            var(--yellow),
+            var(--green),
+            var(--blue),
+            var(--purple),
+            var(--pink),
+            var(--red)
+            );
+            background-origin: border-box;
+            background-clip: padding-box,border-box,border-box;
+            background-size: 200%;
+            animation: animate 2s infinite linear;
+        }
+
+        button::before {
+            content: "";
+            background: linear-gradient(
+                90deg,
+                var(--orange),
+            var(--yellow),
+            var(--green),
+            var(--blue),
+            var(--purple),
+            var(--pink),
+            var(--red)
+            );
+            height: 30%;
+            width: 60%;
+            position: absolute;
+            bottom: -20%;
+            z-index: -5;
+            background-size: 200%;
+            animation: animate 2s infinite linear;
+            filter: blur(calc(0.8 * var(--m)));
+        }
+        button:hover
+        button:hover::before{
+            animation: animate 0.5s infinite linear;
+        }
+        @keyframes animate {
+            0%{
+                background-position: 0;
+            }
+            100%{
+                background-position: 200%;
+            }
+        }
+
+        @media screen and (max-width: 1000px){
+            :root{
+                --m:2rem;
+            }
+        }
+            
+        
+        
+        .boxbox:hover{
+            transform: scale(1.3);
+            z-index: 2;
+        }
+        .container{
+                width: 90%;
+                padding: 20px;
+                margin: 100px auto;
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+
+        }
+        .box{
+            width: 250px;
+            margin:0 10px;
+            box-shadow: 0 0 20px 2px rgba(0, 0, 0.);
+            transition:0.5s;
+        }
+        :root {
+            --m:2rem;
+            --red:#ff6565;
+            --pink:#ff64f9;
+            --purple:#6b5fff;
+            --blue:#4d8aff;
+            --green:#5bff89;
+            --yellow:#ffee55;
+            --orange:#ff6d1b;
+
+        }
+        body {
+            background-color: #141516;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        body {
+        opacity: 0;
+        animation: fadeIn 0.5s ease forwards;
+    }
+
+    @keyframes fadeIn {
+        from {
+            opacity: 0;
+        }
+        to {
+            opacity: 1;
+        }
+    }
+
+   </style>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body style="background-image:url(image.png);">
+    <img src="icegif-753.gif" height="100" width="100">
+    <h1 class="glowing-text">BBL DrizzyGooners</h1>
+    <nav class="navbar">
+        <div class="navbar-left">
+            <a href="/"><img src="/assets/imgs/brunysixl.png" alt="BBL Drizzy" class="logo"></a>
+        </div>
+        <div class="navbar-right">
+            <a href="games.html" class="nav-link">Gxmes</a>
+            <a href="Search.html" class="nav-link">Search</a>
+            <a href="apps.html" class="nav-link">Apps</a>
+            <a href="settings.html" class="nav-link">Settings</a>
+            <a href="tools.html" class="nav-link">Tools</a>
+        </div>
+    </nav>
+    <div class="cursor">
+  
+        <div class="circle"></div>
+          <div class="circle"></div>
+          <div class="circle"></div>
+          <div class="circle"></div>
+          <div class="circle"></div>
+          <div class="circle"></div>
+          <div class="circle"></div>
+          <div class="circle"></div>
+          <div class="circle"></div>
+          <div class="circle"></div>
+          <div class="circle"></div>
+          <div class="circle"></div>
+          <div class="circle"></div>
+          <div class="circle"></div>
+          <div class="circle"></div>
+          <div class="circle"></div>
+          <div class="circle"></div>
+          <div class="circle"></div>
+          <div class="circle"></div>
+          <div class="circle"></div>
+          <div class="circle"></div>
+          <div class="circle"></div>
+          <div class="circle"></div>
+          <div class="circle"></div>
+          <div class="circle"></div>
+          <div class="circle"></div>
+          <div class="circle"></div>
+          <div class="circle"></div>
+          <div class="circle"></div>
+          <div class="circle"></div>
+          <div class="circle"></div>
+          <div class="circle"></div>
+          <div class="circle"></div>
+          <div class="circle"></div>
+          <div class="circle"></div>
+          <div class="circle"></div>
+          <div class="circle"></div>
+          <div class="circle"></div>
+          <div class="circle"></div>
+          
+        </div>
+          
+    <script type="text/javascript" src="hehehehaw.js"></script>
+ 
+    <div id="iframe-overlay"></div>
+    <div id="iframe-container">
+        <iframe id="iframe"></iframe>
+        <div id="close-container">
+            <div id="close-button" onclick="closeIframe()">X</div>
+        </div>
+    </div>
+    
+    
+    <script>
+
+        function openGame() {
+        var win = window.open()
+        var url = "https://example.com"
+        var iframe = win.document.createElement('iframe')
+        iframe.style.width = "100%";
+        iframe.style.height = "100%";
+        iframe.style.border = "none";
+        iframe.src = url
+        win.document.body.appendChild(iframe)
+        }
+
+        function loadGame() {
+            document.getElementById('game-loader').innerText = 'Loading game...';
+            setTimeout(() => {
+                document.getElementById('game-loader').innerText = 'Game loaded!';
+            }, 2000);
+        }
+
+        function openIframe(element) {
+            var url = element.parentNode.getAttribute('data-url');
+            document.getElementById('iframe-overlay').style.display = 'block';
+            document.getElementById('iframe-container').style.display = 'block';
+            document.getElementById('iframe').src = url;
+        }
+
+        function closeIframe() {
+            document.getElementById('iframe-overlay').style.display = 'none';
+            document.getElementById('iframe-container').style.display = 'none';
+            document.getElementById('iframe').src = 'about:blank'; 
+        }
+    </script>
+    
+        
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="particles-brunysixl.js"></script>
+    <script src="hehehehaw.js"></script>
+
+</body>
+
+</html>
