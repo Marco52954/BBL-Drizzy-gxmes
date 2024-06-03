@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <title>BBl Drizzy Games</title>
+    <style>
+        img {
+            width: 100px;
+            border-radius: 50px;
+            margin-right: 10px;
+        }
+        
+
+        button::before {
+            content: "";
+            background: linear-gradient(
+                90deg,
+                var(--orange),
+            var(--yellow),
+            var(--green),
+            var(--blue),
+            var(--purple),
+            var(--pink),
+            var(--red)
+            );
+            height: 30%;
+            width: 60%;
+            position: absolute;
+            bottom: -20%;
+            z-index: -5;
+            background-size: 200%;
+            animation: animate 2s infinite linear;
+            filter: blur(calc(0.8 * var(--m)));
+        }
+        button:hover
+        button:hover::before{
+            animation: animate 0.5s infinite linear;
+        }
+        @keyframes animate {
+            0%{
+                background-position: 0;
+            }
+            100%{
+                background-position: 200%;
+            }
+        }
+
+        @media screen and (max-width: 1000px){
+            :root{
+                --m:2rem;
+            }
+        }
+            
+        
+        
+        .boxbox:hover{
+            transform: scale(1.3);
+            z-index: 2;
+        }
+        .container{
+                width: 90%;
+                padding: 20px;
+                margin: 100px auto;
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+
+        }
+        .box{
+            width: 250px;
+            margin:0 10px;
+            box-shadow: 0 0 20px 2px rgba(0, 0, 0.);
+            transition:0.5s;
+        }
+        :root {
+            --m:2rem;
+            --red:#ff6565;
+            --pink:#ff64f9;
+            --purple:#6b5fff;
+            --blue:#4d8aff;
+            --green:#5bff89;
+            --yellow:#ffee55;
+            --orange:#ff6d1b;
+
+        }
+        body {
+            background-color: #141516;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        body {
+        opacity: 0;
+        animation: fadeIn 0.5s ease forwards;
+    }
+
+    @keyframes fadeIn {
+        from {
+            opacity: 0;
+        }
+        to {
+            opacity: 1;
+        }
+    }
+
+   </style>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body style="background-image:url(wp9776554.webp);">
+    <img src="icegif-753.gif" height="100" width="100">
+    <h1 class="glowing-text">BBL Drizzy Gooners</h1>
+  
+    <nav class="navbar">
+        <div class="navbar-left">
+            <a href="/"><img src="/assets/imgs/brunysixl.png" alt="BBL" class="logo"></a>
+        </div>
+        <div class="navbar-right">
+            <a href="games.html" class="nav-link">Gxmes</a>
+            <a href="Search.html" class="nav-link">Search</a>
+            <a href="apps.html" class="nav-link">Apps</a>
+            <a href="Sites.html" class="nav-link">Sites</a>
+            <a href="tools.html" class="nav-link">Tools</a>
+        </div>
+    </nav>
+
+    <div class="cursor">
+  
+        <div class="circle"></div>
+          <div class="circle"></div>
+          <div class="circle"></div>
+          <div class="circle"></div>
+          <div class="circle"></div>
+          <div class="circle"></div>
+          <div class="circle"></div>
+          <div class="circle"></div>
+          <div class="circle"></div>
+          <div class="circle"></div>
+          <div class="circle"></div>
+          <div class="circle"></div>
+          <div class="circle"></div>
+          <div class="circle"></div>
+          <div class="circle"></div>
+          <div class="circle"></div>
+          <div class="circle"></div>
+          <div class="circle"></div>
+          <div class="circle"></div>
+          <div class="circle"></div>
+          <div class="circle"></div>
+          <div class="circle"></div>
+          <div class="circle"></div>
+          <div class="circle"></div>
+          <div class="circle"></div>
+          <div class="circle"></div>
+          <div class="circle"></div>
+          <div class="circle"></div>
+          <div class="circle"></div>
+          <div class="circle"></div>
+          <div class="circle"></div>
+          <div class="circle"></div>
+          <div class="circle"></div>
+          <div class="circle"></div>
+          <div class="circle"></div>
+          <div class="circle"></div>
+          <div class="circle"></div>
+          <div class="circle"></div>
+          <div class="circle"></div>
+          
+        </div>
+          
+    <script type="text/javascript" src="hehehehaw.js"></script>
+ 
+    <div id="iframe-overlay"></div>
+    <div id="iframe-container">
+        <iframe id="iframe"></iframe>
+        <div id="close-container">
+            <div id="close-button" onclick="closeIframe()">X</div>
+        </div>
+    </div>
+    
+    <script>
+
+        function openGame() {
+        var win = window.open()
+        var url = "https://bbl-drizzy-gxmes.netlify.app"
+        var iframe = win.document.createElement('iframe')
+        iframe.style.width = "100%";
+        iframe.style.height = "100%";
+        iframe.style.border = "none";
+        iframe.src = url
+        win.document.body.appendChild(iframe)
+        }
+
+        function loadGame() {
+            document.getElementById('game-loader').innerText = 'Loading game...';
+            setTimeout(() => {
+                document.getElementById('game-loader').innerText = 'Game loaded!';
+            }, 2000);
+        }
+
+        function openIframe(element) {
+            var url = element.parentNode.getAttribute('data-url');
+            document.getElementById('iframe-overlay').style.display = 'block';
+            document.getElementById('iframe-container').style.display = 'block';
+            document.getElementById('iframe').src = url;
+        }
+
+        function closeIframe() {
+            document.getElementById('iframe-overlay').style.display = 'none';
+            document.getElementById('iframe-container').style.display = 'none';
+            document.getElementById('iframe').src = 'about:blank'; 
+        }
+    </script>
+    
+        
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="particles-brunysixl.js"></script>
+    <script src="hehehehaw.js"></script>
+
+    <div class="container">
+        <div class="card">
+            <div class="face face1">
+                <div class="content">
+                    <i class="fab fa-windows"></i>
+                    <h3>About:Blank Cloaking</h3>
+                </div>
+            </div>
+            <div class="face face2">
+                <div class="content">
+                    <p>about:blank cloaking shows as a blank screen but it can still render code. This is secure to not be seen on history and it cant be blocked</p>
+                    <a href="#">
+                        <button onclick="openGame()">about:blank</button>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="face face1">
+                <div class="content">
+                    <i class="fab fa-apple"></i>
+                    <h3>Night/Day Switch</h3>
+                </div>
+            </div>
+            <div class="face face2">
+                <div class="content">
+                    <p>This switch is pure cosmetic, meaning nothing other than determining if you want an eyesore or not. [NOT WORKING]</p>
+                    <div class="theme-switch-wrapper">
+                        <span id="toggle-icon">
+                          <span class="toggle-text">Light Mode</span>
+                          <i class="fas fa-sun"></i>
+                        </span>
+                        <label class="theme-switch">
+                          <input type="checkbox" />
+                          <div class="slider round"></div>
+                        </label>
+                      </div>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="face face1">
+                <div class="content">
+                    <i class="fab fa-android"></i>
+                    <h3>About the Site</h3>
+                </div>
+            </div>
+            <div class="face face2">
+                <div class="content">
+                    <p>This site was made as a more custom version of my google site, making a more versatile site which is more visualy pleasing and is more capable.</p>
+                    <a href="#" type="button">Read More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+  
+
+</body>
+
+</html>
