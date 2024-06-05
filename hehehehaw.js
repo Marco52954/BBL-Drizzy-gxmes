@@ -49,7 +49,6 @@ document.addEventListener("DOMContentLoaded", function() {
   const homeScreen = document.getElementById("home-screen");
 
   submitButton.addEventListener("click", function() {
-    console.log()
     const password = passwordInput.value;
     if (password === "mongoliantiptoe") {
       // Correct password, show the home screen
@@ -61,4 +60,17 @@ document.addEventListener("DOMContentLoaded", function() {
     }
   });
 });
+document.addEventListener("mousemove", function(event) {
+  var cursor = document.querySelector(".custom-cursor");
+  cursor.style.left = event.clientX + "px";
+  cursor.style.top = event.clientY + "px";
+});
 
+const list = document.querySelectorAll('.list');
+function activeLink() {
+    list.forEach((item) =>
+    item.classList.remove('active'));
+    this.classList.add('active');
+}
+list.forEach((item) =>
+item.addEventListener('click',activeLink));

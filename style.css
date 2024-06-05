@@ -405,3 +405,18 @@ body {
     backdrop-filter: blur(50px);
     z-index: -1;    
 }   
+body {
+    cursor: none;
+}
+
+.custom-cursor {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 50px; /* Adjust size as needed */
+    height: 50px; /* Adjust size as needed */
+    background-image: url('dbz.png');
+    background-size: cover;
+    pointer-events: none; /* Ensure cursor doesn't interfere with mouse events */
+    z-index: 9999999999999999999999999999; /* Ensure cursor is on top of other elements */
+}
