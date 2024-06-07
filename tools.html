@@ -73,17 +73,9 @@
             box-shadow: 0 0 20px 2px rgba(0, 0, 0.);
             transition:0.5s;
         }
-        :root {
-            --m:2rem;
-            --red:#ff6565;
-            --pink:#ff64f9;
-            --purple:#6b5fff;
-            --blue:#4d8aff;
-            --green:#5bff89;
-            --yellow:#ffee55;
-            --orange:#ff6d1b;
+      
 
-        }
+        
         body {
             background-color: #141516;
             display: flex;
@@ -96,6 +88,9 @@
         body {
         opacity: 0;
         animation: fadeIn 0.5s ease forwards;
+    }
+    h1 {
+        text-align: center;
     }
 
     @keyframes fadeIn {
@@ -110,10 +105,15 @@
 
    </style>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="default.css" id="theme">
 </head>
-<body style="background-image:url(wp9776554.webp);">
-    <img src="icegif-753.gif" height="100" width="100">
+<body>
+    <h2>Hi</h2>
+    <h1 class="glowing-text">BBL</h1>
     <h1 class="glowing-text">BBL Drizzy Gooners</h1>
+    <p>These are the tools of my website</p>
+    <hr>
+
   
     <nav class="navbar">
         <div class="navbar-left">
@@ -185,6 +185,7 @@
         </div>
     </div>
     
+    
     <script>
 
         function openGame() {
@@ -217,6 +218,8 @@
             document.getElementById('iframe-container').style.display = 'none';
             document.getElementById('iframe').src = 'about:blank'; 
         }
+        
+
     </script>
     
         
@@ -231,12 +234,12 @@
             <div class="face face1">
                 <div class="content">
                     <i class="fab fa-windows"></i>
-                    <h3>About:Blank Cloaking</h3>
+                    <h3 style="color: rgb(0, 2, 3);">About:Blank Cloaking</h3>
                 </div>
             </div>
             <div class="face face2">
                 <div class="content">
-                    <p>about:blank cloaking shows as a blank screen but it can still render code. This is secure to not be seen on history and it cant be blocked</p>
+                    <p style="color: rgb(0, 2, 3);">about:blank cloaking shows as a blank screen but it can still render code. This is secure to not be seen on history and it cant be blocked</p>
                     <a href="#">
                         <button onclick="openGame()">about:blank</button>
                     </a>
@@ -247,39 +250,34 @@
             <div class="face face1">
                 <div class="content">
                     <i class="fab fa-apple"></i>
-                    <h3>Change background</h3>
+                    <h3 style="color: rgb(0, 5, 8);">Change Theme</h3>
                 </div>
             </div>
             <div class="face face2">
-                <div class="content">
-                    <p>This switch is pure cosmetic, meaning nothing other than determining if you want an eyesore or not. [NOT WORKING]</p>
-                    <div class="theme-switch-wrapper">
-                        <span id="toggle-icon">
-                          <span class="toggle-text">Light Mode</span>
-                          <i class="fas fa-sun"></i>
-                        </span>
-                        <label class="theme-switch">
-                          <input type="checkbox" />
-                          <div class="slider round"></div>
-                        </label>
-                      </div>
+                <div class="theme-dropdown-wrapper">
+                    <label for="theme-dropdown" style="color: rgb(0, 5, 9);">Select Theme:</label>
+                    <select id="theme-dropdown">
+                        <option value="default">Default</option>
+                        <option value="dark">Dark</option>
+                        <option value="darkblue">Dark Blue</option>
+                        <option value="darkpurple">Dark Purple</option>
+                        <option value="blackandblue">Black & Blue</option>
+                        <option value="blackandred">Black & Red</option>
+                    </select>
                 </div>
             </div>
         </div>
         <div class="card">
             <div class="face face1">
                 <div class="content">
-                    <i class="fab fa-android"></i>
-                    <h3>About the Site</h3>
+                    <i class="fab fa-apple"></i>
+                    <h3 style="color: rgb(0, 0, 2);">Change background</h3>
                 </div>
             </div>
             <div class="face face2">
-                <div class="content">
-                    <p>This site was made as a more custom version of my google site, making a more versatile site which is more visualy pleasing and is more capable.</p>
-                    <a href="#" type="button">Read More</a>
-                </div>
-            </div>
+                
         </div>
+        
     </div>
   
 

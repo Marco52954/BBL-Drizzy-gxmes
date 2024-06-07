@@ -1,14 +1,11 @@
 body {
-    margin: 15;
-    padding: 0;
     font-family: Arial, sans-serif;
-    background-color: #000;
-    color: #fff;
-    text-align: center;
-    position: relative;
-    z-index: 0;
- }
-  .navbar {
+    background-color: #33074a;
+    color: #fc03fc;
+}
+
+/* Add dark styles for other elements */
+.navbar {
     position: fixed;
     top: 0;
     left: 50%;
@@ -19,15 +16,15 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #03093f; 
+    background-color: #530c61; 
     color: white;
     padding: 10px 20px;
     z-index: 1000;
     border-bottom-left-radius: 15px;
     border-bottom-right-radius: 15px;
-    border-left: 1px solid #1203bc;
-    border-right: 1px solid #1203bc;
-    border-bottom: 1px solid #1203bc;
+    border-left: 1px solid #fd01be;
+    border-right: 1px solid #fd01be;
+    border-bottom: 1px solid #fd01be;
 }
 
 
@@ -42,14 +39,14 @@ body {
 
     .nav-link {
         text-decoration: none;
-        color: rgb(13, 77, 250);
+        color: rgb(243, 3, 252);
         padding: 10px 15px;
         transition: background-color 0.3s ease;
     border-radius: 10px;
     }
 
     .nav-link:hover {
-        background-color: #06126c;
+        background-color: #8b2084;
     }
 
     .content {
@@ -92,7 +89,7 @@ filter: invert(1);
 }
   hr {
         border: none;
-        border-top: 2px solid rgb(35, 98, 246); 
+        border-top: 2px solid rgb(251, 252, 252); 
         margin: 15px auto; 
         width: 50%; 
         height: 1px; 
@@ -107,7 +104,7 @@ margin: 5px;
 .image-container img {
 width: 110px;
 height: 110px;
-border: 3px solid rgb(13, 77, 228);
+border: 3px solid rgb(77, 7, 77);
 border-radius: 10px;
 transition: transform 0.3s ease, filter 0.3s ease;
 }
@@ -123,7 +120,7 @@ top: 0;
 left: 0;
 width: 100vw;
 height: 100vh;
-background-color: rgba(25, 70, 232, 0.5);
+background-color: rgba(184, 58, 182, 0.5);
 z-index: 9998;
 display: none;
 }
@@ -134,9 +131,9 @@ top: 50%;
 left: 50%;
 transform: translate(-50%, -50%);
 z-index: 9999;
-background-color: #063066;
+background-color: #5b0a54;
 padding: 20px;
-border: 2px solid rgb(3, 131, 251);
+border: 2px solid rgb(247, 3, 231);
 border-radius: 10px;
 display: none;
 }
@@ -144,7 +141,7 @@ display: none;
 #iframe {
 width: 1200px;
 height: 600px;
-border: 3px solid rgb(29, 48, 135);
+border: 3px solid rgb(240, 5, 240);
 border-radius: 10px;
 }
 
@@ -162,13 +159,13 @@ width: 100%;
 #close-button {
 width: 30px;
 height: 30px;
-background-color: #03093f;
+background-color: #631164;
 color: white;
 display: flex;
 justify-content: center;
 align-items: center;
 cursor: pointer;
-border: 2px solid rgb(4, 68, 246);
+border: 2px solid rgb(247, 3, 231);
 border-radius: 50%;
 transition: transform 0.3s ease, filter 0.3s ease;
 }
@@ -194,14 +191,7 @@ h2, h3, h4, h5, h6, p {
     color: white;
     text-align: center;
 }
-body {
-    box-sizing: border-box;
-    padding: 0;
-    margin:0;
-    background-color: white;
-    height: 100vh;
-    overflow: scroll;
-  }
+
   
   .cursor {
     pointer-events: none;
@@ -238,18 +228,7 @@ html, body {
     height: 100%;
     width: 100%;
   }
-  
 
-  body{
-    display: flex;
-    margin: 0;
-    padding: 0;
-    min-height: 100vh;
-    background-color: #061c8a;
-    justify-content: center;
-    align-items: center;
-    font-family: Arial, Helvetica, sans-serif;
-}
 .container{
     width: 1000px;
     position: relative;
@@ -269,8 +248,9 @@ html, body {
 
 .container .card .face.face1{
     position: relative;
-    background: #012a9a;
+    background: #e40ae4;
     display: flex;
+    color: white;
     justify-content: center;
     align-items: center;
     align-content: center;
@@ -315,13 +295,13 @@ html, body {
 }
 .container .card .face.face2{
     position: relative;
-    background: rgb(25, 25, 109);
+    background: rgb(121, 13, 121);
     display: flex;
     align-items: center;
     justify-content:  center;
     padding: 20px;
     box-sizing: border-box;
-    box-shadow: 0 20px 50px rgba(6, 73, 244, 0.8);
+    box-shadow: 0 20px 50px rgba(232, 3, 240, 0.8);
     transform: translateY(-100px);
 }
 .container .card:hover .face.face2{
@@ -331,13 +311,13 @@ html, body {
     font-size: 10pt;
     margin: 0;
     padding: 0;
-    color: #4309e2;
+    color: #460150;
 }
 .container .card .face.face2 .content a{
     text-decoration: none;
     color: black;
     box-sizing: border-box;
-    outline: 1px dashed #070fea;
+    outline: 1px dashed #ce0cbe;
     padding: 10px;
     margin: 15px 0 0 ;
     display: inline-block;
@@ -345,8 +325,8 @@ html, body {
 }
 .container .card .face.face2 .content a:hover{
     background: #f4f4f6;
-    color: rgb(5, 79, 237);
-    box-shadow: inset 0px 0px 10px rgba(0,0,0,0.5);
+    color: rgb(222, 13, 215);
+    box-shadow: inset 0px 0px 10px rgba(7, 3, 68, 0.5);
 }
 @import url("https://fonts.googleapis.com/css2?family=Comfortaa&family=Kaushan+Script&family=Oswald&display=swap");
 
@@ -355,7 +335,7 @@ html, body {
   --primary-variant: #ff2d2d;
   --secondary-color: #1b9999;
   --on-primary: rgb(250, 250, 250);
-  --on-background: rgb(66, 66, 66);
+  --on-background: rgb(253, 252, 252);
   --on-background-alt: rgba(66, 66, 66, 0.7);
   --background: rgb(255, 255, 255);
   --box-shadow: 0 5px 20px 1px rgba(0, 0, 0, 0.5);
@@ -367,7 +347,7 @@ html, body {
   --secondary-color: #03dac5;
   --on-primary: #000;
   --on-background: rgba(255, 255, 255, 0.9);
-  --on-background-alt: rgba(255, 255, 255, 0.7);
+  --on-background-alt: rgb(255, 255, 255);
   --background: #121212;
 }
 
@@ -377,12 +357,8 @@ html, body {
     box-sizing: border-box;
     font-family: sans-serif;
 } 
-body {
-    min-height: 100vh;
-    background: url(background-image.jpg);
-    background-size: cover;
-    background-position: center;
-}
+
+
 .header {
     position: fixed;
     top: 0;

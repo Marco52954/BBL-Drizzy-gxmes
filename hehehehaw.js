@@ -74,3 +74,32 @@ function activeLink() {
 }
 list.forEach((item) =>
 item.addEventListener('click',activeLink));
+
+document.addEventListener('DOMContentLoaded', function() {
+  const dropdown = document.getElementById('theme-dropdown');
+  const themeLink = document.getElementById('theme');
+
+  // Check if a theme is stored in local storage
+  const storedTheme = localStorage.getItem('selectedTheme');
+  if (storedTheme) {
+      // Apply the stored theme
+      themeLink.href = storedTheme + '.css';
+      // Update the dropdown value
+      dropdown.value = storedTheme;
+  }
+
+  dropdown.addEventListener('change', function() {
+      const selectedTheme = this.value;
+      // Store the selected theme in local storage
+      localStorage.setItem('selectedTheme', selectedTheme);
+      // Update the href attribute of the link tag
+      themeLink.href = selectedTheme + '.css';
+  });
+});
+
+
+
+
+
+
+
